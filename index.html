@@ -18,63 +18,102 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Hyewon Lee home">
-        <span class="brand-mark">HL</span>
-        <span>Hyewon Lee</span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <header class="navbar">
+      <div class="nav-inner">
+        <a class="navbar-brand" href="#top" aria-label="Hyewon Lee home">
+          <span class="brand-mark">HL</span>
+          <span>Hyewon Lee</span>
+        </a>
+
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="navbar-toggler" for="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="navbar-nav" aria-label="Primary navigation">
+          <a class="active" href="#top">Home</a>
+          <a href="#about">About</a>
+          <a href="#publications">Publications</a>
+          <a href="#research">Research</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#cv">CV</a>
+        </nav>
+
+        <div class="nav-tools" aria-hidden="true">
+          <span class="tool-button">⌕</span>
+          <span class="tool-button">☼</span>
+        </div>
+      </div>
     </header>
 
     <main id="top" class="home-grid">
       <div class="home-content">
         <section class="intro" aria-labelledby="intro-heading">
-          <p class="kicker">PhD Candidate in Economics</p>
-          <h1 id="intro-heading">Hyewon Lee</h1>
-          <p class="home-subtitle">Iowa State University</p>
+          <h1 id="intro-heading" class="home-hero">Hyewon Lee</h1>
+          <p class="home-hero-sub">
+            PhD Candidate in Economics, Iowa State University
+          </p>
 
           <div class="chip-container" aria-label="Research areas">
-            <a class="chip" href="#research">Production economics</a>
-            <a class="chip" href="#research">Environmental economics</a>
-            <a class="chip" href="#research">Agricultural decisions</a>
-            <a class="chip" href="#research">Spatial externalities</a>
+            <a class="chip" href="#research">Production Economics</a>
+            <a class="chip" href="#research">Environmental Economics</a>
+            <a class="chip" href="#research">Integrated Pest Management</a>
+            <a class="chip" href="#research">Farmland Valuation</a>
           </div>
 
-          <p class="lead">
-            I am a PhD candidate in Economics at Iowa State University, with a
-            focus on production economics and environmental economics.
-          </p>
           <p>
-            My research interests center on how information, spatial
-            externalities, and long-term conservation practices shape farmers'
-            decisions, environmental outcomes, and farmland values.
+            I am a PhD candidate in Economics at Iowa State University, with a
+            focus on production economics and environmental economics. My
+            research interests center on how information, spatial externalities,
+            and long-term conservation practices shape farmers' decisions,
+            environmental outcomes, and farmland values.
           </p>
+
+          <div class="callout callout-info">
+            <div class="callout-title">
+              <span class="callout-icon">✦</span>
+              Current research focus
+            </div>
+            <p>
+              Costly information acquisition, pesticide use, conservation
+              practices, and agricultural land valuation.
+            </p>
+          </div>
+
+          <figure class="banner-frame">
+            <img
+              src="./assets/research-banner.svg"
+              alt="Stylized agricultural economics research banner"
+            />
+            <figcaption class="banner-caption">
+              Production economics, environmental decisions, and agricultural
+              policy.
+            </figcaption>
+          </figure>
         </section>
 
         <section id="about" class="section" aria-labelledby="about-heading">
-          <h2 id="about-heading">About</h2>
+          <h2 id="about-heading">About me</h2>
           <p>
             My work studies agricultural and environmental decision-making,
             including costly information acquisition, pesticide use, conservation
             practices, and farmland valuation.
           </p>
-          <div class="callout">
-            <h3>Current Focus</h3>
-            <p>
-              Integrated Pest Management, farmer information decisions, and the
-              economic value of monitoring technologies in production systems.
-            </p>
-          </div>
+          <p>
+            I am especially interested in how information, spatial externalities,
+            and long-term conservation practices shape management choices and
+            environmental outcomes in agricultural systems.
+          </p>
         </section>
 
-        <section id="research" class="section" aria-labelledby="research-heading">
-          <h2 id="research-heading">Research</h2>
+        <section
+          id="publications"
+          class="section"
+          aria-labelledby="publications-heading"
+        >
+          <h2 id="publications-heading">Publications</h2>
 
           <article class="pub-entry">
             <span class="year-badge">2025</span>
@@ -123,6 +162,10 @@
               </a>
             </div>
           </article>
+        </section>
+
+        <section id="research" class="section" aria-labelledby="research-heading">
+          <h2 id="research-heading">Research</h2>
 
           <article class="pub-entry">
             <p class="pub-type">Working Paper</p>
@@ -226,7 +269,7 @@
           <p class="profile-title">PhD Candidate in Economics</p>
           <p class="profile-institution">Iowa State University</p>
           <div class="profile-links">
-            <a class="icon-link" href="mailto:hwmlee@iastate.edu" title="Email">Email</a>
+            <a class="icon-link" href="mailto:hwmlee@iastate.edu" title="Email">✉</a>
             <a class="icon-link" href="./assets/CV_Hyewon_May2026.pdf" title="CV">CV</a>
             <a
               class="icon-link"
@@ -238,47 +281,73 @@
               ISU
             </a>
           </div>
-        </section>
-
-        <section class="side-card">
-          <h2>Education</h2>
-          <ul class="education-list">
-            <li>
-              <strong>Ph.D. in Economics</strong>
-              <span>Iowa State University, 2027 expected</span>
-            </li>
-            <li>
-              <strong>M.A. in Agricultural and Resource Economics</strong>
-              <span>Seoul National University, 2021</span>
-            </li>
-            <li>
-              <strong>B.A. in Economics</strong>
-              <span>Ewha Womans University, 2018</span>
-            </li>
-            <li>
-              <strong>Exchange Student Program</strong>
-              <span>Universidad Alfonso X El Sabio, 2016</span>
-            </li>
+          <ul class="profile-education">
+            <li>(2027 expected) Ph.D. Economics, Iowa State</li>
+            <li>(2021) M.A. Agricultural &amp; Resource Economics, SNU</li>
           </ul>
         </section>
 
-        <section id="contact" class="side-card">
-          <h2>Contact</h2>
-          <p>
-            483 Heady Hall<br />
-            Department of Economics<br />
-            518 Farm House Lane<br />
-            Iowa State University<br />
-            Ames, IA 50011-1054
-          </p>
-          <a href="mailto:hwmlee@iastate.edu">hwmlee@iastate.edu</a>
+        <section class="section-card">
+          <h2>News</h2>
+          <div class="news-timeline">
+            <article class="news-item">
+              <p class="news-date">Fall 2025</p>
+              <p class="news-headline">
+                Policy publication on soybean aphid and pesticide use in Iowa.
+              </p>
+            </article>
+            <article class="news-item">
+              <p class="news-date">Spring 2026</p>
+              <p class="news-headline">
+                Teaching Assistant, Agriculture, Food &amp; Trade Policy
+                (ECON4600/5600).
+              </p>
+            </article>
+            <article class="news-item">
+              <p class="news-date">Summer 2025</p>
+              <p class="news-headline">
+                Instructor, Principles of Microeconomics (ECON1010).
+              </p>
+            </article>
+          </div>
+          <a class="news-link" href="#publications">See publications →</a>
         </section>
       </aside>
     </main>
 
     <footer class="site-footer">
-      <span>&copy; <span id="year"></span> Hyewon Lee</span>
-      <a href="#top">Back to top</a>
+      <div class="footer-inner">
+        <section>
+          <h2>About</h2>
+          <p>Hyewon Lee</p>
+          <p>PhD Candidate in Economics</p>
+          <p>Iowa State University</p>
+        </section>
+        <section>
+          <h2>Contact</h2>
+          <p>
+            483 Heady Hall<br />
+            Department of Economics<br />
+            Iowa State University<br />
+            Ames, IA 50011-1054
+          </p>
+          <a href="mailto:hwmlee@iastate.edu">hwmlee@iastate.edu</a>
+        </section>
+        <section>
+          <h2>Links</h2>
+          <a
+            href="https://www.econ.iastate.edu/people/hyewon-lee"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Iowa State profile
+          </a>
+          <a href="./assets/CV_Hyewon_May2026.pdf">Curriculum vitae</a>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Hyewon Lee</span>
+      </div>
     </footer>
 
     <script src="./script.js"></script>

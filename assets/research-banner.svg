@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="Agricultural economics research banner">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f6f1"/>
+      <stop offset="1" stop-color="#dbe9e2"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3d77b"/>
+      <stop offset="1" stop-color="#9abf84"/>
+    </linearGradient>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1.4" fill="#2c2a25" opacity=".22"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="360" fill="url(#sky)"/>
+  <path d="M0 210 C190 160 350 170 520 215 C720 270 930 220 1200 150 L1200 360 L0 360 Z" fill="url(#field)"/>
+  <path d="M0 260 C180 230 330 240 510 280 C760 335 940 275 1200 230" fill="none" stroke="#7da46f" stroke-width="3" opacity=".65"/>
+  <path d="M0 305 C230 282 370 300 555 325 C805 360 970 330 1200 288" fill="none" stroke="#7da46f" stroke-width="3" opacity=".6"/>
+  <rect width="1200" height="360" fill="url(#dots)" opacity=".45"/>
+  <g fill="none" stroke="#1a7a6d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".9">
+    <path d="M150 205 C180 185 210 180 240 195 C270 210 300 205 330 185"/>
+    <path d="M150 205 L150 250"/>
+    <path d="M240 195 L240 250"/>
+    <path d="M330 185 L330 250"/>
+    <path d="M705 118 L705 252"/>
+    <path d="M680 150 L730 150"/>
+    <path d="M665 190 L745 190"/>
+    <path d="M650 230 L760 230"/>
+  </g>
+  <g fill="#2c2a25" opacity=".72">
+    <circle cx="520" cy="178" r="9"/>
+    <circle cx="575" cy="152" r="6"/>
+    <circle cx="628" cy="189" r="7"/>
+    <circle cx="862" cy="160" r="8"/>
+    <circle cx="910" cy="205" r="6"/>
+    <circle cx="956" cy="174" r="7"/>
+  </g>
+  <g fill="none" stroke="#2c2a25" stroke-width="2" opacity=".5">
+    <path d="M520 178 L575 152 L628 189"/>
+    <path d="M862 160 L910 205 L956 174"/>
+  </g>
+  <text x="64" y="78" fill="#2c2a25" font-family="Georgia, serif" font-size="38" font-weight="700">Information, Fields, and Decisions</text>
+  <text x="66" y="116" fill="#5c5850" font-family="Arial, sans-serif" font-size="20">Production economics and environmental outcomes in agricultural systems</text>
+</svg>
