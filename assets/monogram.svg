@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" role="img" aria-label="Hyewon Lee monogram">
+  <defs>
+    <linearGradient id="frame" x1="60" y1="32" x2="460" y2="488" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1f7a6d"/>
+      <stop offset="1" stop-color="#c46a42"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="116" y1="94" x2="420" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fffdfa"/>
+      <stop offset="1" stop-color="#eee7d8"/>
+    </linearGradient>
+  </defs>
+  <rect x="48" y="48" width="424" height="424" rx="48" fill="url(#frame)"/>
+  <rect x="88" y="88" width="344" height="344" rx="34" fill="url(#paper)"/>
+  <path d="M143 154h46v82h142v-82h46v212h-46v-86H189v86h-46V154Z" fill="#17211d"/>
+  <path d="M189 366h188v-42H235V154h-46v212Z" fill="#1f7a6d"/>
+  <path d="M129 405c48-20 88-22 120-8 38 17 74 13 123-15" fill="none" stroke="#c46a42" stroke-width="15" stroke-linecap="round"/>
+</svg>
