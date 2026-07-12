@@ -7,7 +7,7 @@ Static personal website for GitHub Pages.
 - `index.html` contains the page content.
 - `styles.css` contains the visual design.
 - `script.js` contains the small footer year script.
-- `assets/` contains the favicon and monogram artwork.
+- `assets/` contains the favicon, profile image, Iowa State logo, and CV PDF.
 
 ## Publish with GitHub Pages
 
